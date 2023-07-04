@@ -1,0 +1,6 @@
+/node_modules/
+/dist/tsc/esm/index.d.ts
+/dist/tsc/esm/index.js
+/dist/tsc/esm/index.js.map
+/dist/tsc/tsconfig.esm.tsbuildinfo
+/dist/index.js

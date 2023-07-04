@@ -1,0 +1,23 @@
+{
+  "reflection": true,
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "CommonJS",
+    "target": "ES2020",
+    "moduleResolution": "node",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "esModuleInterop": true,
+    "outDir": "./dist/tsc/cjs",
+    "declaration": true,
+    "composite": true,
+    "rootDir": "src"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

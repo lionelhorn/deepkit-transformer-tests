@@ -1,0 +1,27 @@
+{
+  "name": "deepkit-build-tests",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "test:esbuild": "node esbuild.mjs && node dist/index.js",
+    "test:tsc": "tsc --build tsconfig.esm.json && node dist/tsc/esm/index.js",
+    "postinstall": "node ./node_modules/@deepkit/type-compiler/dist/cjs/install-transformer.js"
+  },
+  "dependencies": {
+    "@deepkit/type": "^1.0.1-alpha.97"
+  },
+  "devDependencies": {
+    "@deepkit/type-compiler": "^1.0.1-alpha.97",
+    "esbuild": "^0.18.11",
+    "@gjsify/esbuild-plugin-deepkit": "^0.0.3",
+    "@types/node": "^18.16.19",
+    "typescript": "^5.1.6"
+  },
+  "stackblitz": {
+    "startCommand": "npm run test:ui"
+  },
+  "engines": {
+    "node": "18.15.0"
+  }
+}
