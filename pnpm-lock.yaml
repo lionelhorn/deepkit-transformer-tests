@@ -6,7 +6,7 @@ settings:
 
 patchedDependencies:
   '@deepkit/type-compiler@1.0.1-alpha.97':
-    hash: nfjgl3npll2k6rpaj4qo75zmli
+    hash: 6fuedauhg7bnw43tvt7pki76ia
     path: patches/@deepkit__type-compiler@1.0.1-alpha.97.patch
 
 dependencies:
@@ -17,7 +17,7 @@ dependencies:
 devDependencies:
   '@deepkit/type-compiler':
     specifier: ^1.0.1-alpha.97
-    version: 1.0.1-alpha.97(patch_hash=nfjgl3npll2k6rpaj4qo75zmli)(typescript@5.1.6)
+    version: 1.0.1-alpha.97(patch_hash=6fuedauhg7bnw43tvt7pki76ia)(typescript@5.1.6)
   '@deepkit/vite':
     specifier: ^1.0.1-alpha.97
     version: 1.0.1-alpha.97(@deepkit/type-compiler@1.0.1-alpha.97)
@@ -49,7 +49,7 @@ packages:
       to-fast-properties: 3.0.1
     dev: false
 
-  /@deepkit/type-compiler@1.0.1-alpha.97(patch_hash=nfjgl3npll2k6rpaj4qo75zmli)(typescript@5.1.6):
+  /@deepkit/type-compiler@1.0.1-alpha.97(patch_hash=6fuedauhg7bnw43tvt7pki76ia)(typescript@5.1.6):
     resolution: {integrity: sha512-KeK21jdqM3keF504kmf7RcJkWV/xJMAjiK79MkNN43TyRjViOkmv50p6CW+vdHx6H772sQ765gX+gpH8i/yIZQ==}
     hasBin: true
     requiresBuild: true
@@ -90,7 +90,7 @@ packages:
     peerDependencies:
       '@deepkit/type-compiler': ^1.0.1-alpha.93
     dependencies:
-      '@deepkit/type-compiler': 1.0.1-alpha.97(patch_hash=nfjgl3npll2k6rpaj4qo75zmli)(typescript@5.1.6)
+      '@deepkit/type-compiler': 1.0.1-alpha.97(patch_hash=6fuedauhg7bnw43tvt7pki76ia)(typescript@5.1.6)
       '@rollup/pluginutils': 5.0.2
     transitivePeerDependencies:
       - rollup
@@ -495,7 +495,7 @@ packages:
   /@gjsify/esbuild-plugin-deepkit@0.0.3(typescript@5.1.6):
     resolution: {integrity: sha512-Wqcou60b7B9SPb8f20vUrUFlsRj4e93tAQz2ud2jaSOiqIO4kEKWuIUHsx5jMlt/YBF28kv8xd4cnSMOo5xosw==}
     dependencies:
-      '@deepkit/type-compiler': 1.0.1-alpha.97(patch_hash=nfjgl3npll2k6rpaj4qo75zmli)(typescript@5.1.6)
+      '@deepkit/type-compiler': 1.0.1-alpha.97(patch_hash=6fuedauhg7bnw43tvt7pki76ia)(typescript@5.1.6)
     transitivePeerDependencies:
       - supports-color
       - typescript

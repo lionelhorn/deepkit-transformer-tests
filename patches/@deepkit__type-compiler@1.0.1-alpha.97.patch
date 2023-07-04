@@ -25,7 +25,7 @@ index f27645f8a84ab52d0ebb6e0fc43fd20a2749e59c..cb48f1729584f99cba47575ae63dd291
  export function isObject(obj) {
      if (obj === null) {
 diff --git a/src/compiler.ts b/src/compiler.ts
-index d88c41266be7a853268824d8de0d49e00ad664d0..7749780d7042209acd549180d50ad9eab83c1ec3 100644
+index d88c41266be7a853268824d8de0d49e00ad664d0..ec4b10fd17317be1dc8eed90928a1d13aabc6c0f 100644
 --- a/src/compiler.ts
 +++ b/src/compiler.ts
 @@ -92,7 +92,7 @@ import stripJsonComments from 'strip-json-comments';
@@ -33,7 +33,7 @@ index d88c41266be7a853268824d8de0d49e00ad664d0..7749780d7042209acd549180d50ad9ea
  import { Resolver } from './resolver.js';
  import { knownLibFilesForCompilerOptions } from '@typescript/vfs';
 -import * as micromatch from 'micromatch';
-+import as micromatch from 'micromatch';
++import micromatch from 'micromatch';
  
  // don't use from @deepkit/core since we don't want to have a dependency to @deepkit/core
  export function isObject(obj: any): obj is { [key: string]: any } {
