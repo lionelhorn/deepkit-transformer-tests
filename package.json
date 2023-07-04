@@ -4,7 +4,7 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "test:esbuild": "node esbuild.mjs && node dist/index.js",
+    "test:esbuild": "node esbuild.mjs && node dist/esbuild/index.js",
     "test:tsc": "tsc --build tsconfig.esm.json && node dist/tsc/esm/index.js",
     "postinstall": "node ./node_modules/@deepkit/type-compiler/dist/cjs/install-transformer.js"
   },
