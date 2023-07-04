@@ -1,0 +1,39 @@
+diff --git a/dist/cjs/src/compiler.js b/dist/cjs/src/compiler.js
+index 9a7d8f3beed2d8f79d3e38ce576c0927c3b1f5e0..6bf7270339ad333da9c73f5849d2fe7374e1e426 100644
+--- a/dist/cjs/src/compiler.js
++++ b/dist/cjs/src/compiler.js
+@@ -44,7 +44,7 @@ const strip_json_comments_1 = __importDefault(require("strip-json-comments"));
+ const type_spec_1 = require("@deepkit/type-spec");
+ const resolver_js_1 = require("./resolver.js");
+ const vfs_1 = require("@typescript/vfs");
+-const micromatch = __importStar(require("micromatch"));
++const micromatch = __importDefault(require("micromatch"));
+ // don't use from @deepkit/core since we don't want to have a dependency to @deepkit/core
+ function isObject(obj) {
+     if (obj === null) {
+diff --git a/dist/esm/src/compiler.js b/dist/esm/src/compiler.js
+index f27645f8a84ab52d0ebb6e0fc43fd20a2749e59c..cb48f1729584f99cba47575ae63dd2919c0264d2 100644
+--- a/dist/esm/src/compiler.js
++++ b/dist/esm/src/compiler.js
+@@ -15,7 +15,7 @@ import stripJsonComments from 'strip-json-comments';
+ import { ReflectionOp, TypeNumberBrand } from '@deepkit/type-spec';
+ import { Resolver } from './resolver.js';
+ import { knownLibFilesForCompilerOptions } from '@typescript/vfs';
+-import * as micromatch from 'micromatch';
++import micromatch from 'micromatch';
+ // don't use from @deepkit/core since we don't want to have a dependency to @deepkit/core
+ export function isObject(obj) {
+     if (obj === null) {
+diff --git a/src/compiler.ts b/src/compiler.ts
+index d88c41266be7a853268824d8de0d49e00ad664d0..7749780d7042209acd549180d50ad9eab83c1ec3 100644
+--- a/src/compiler.ts
++++ b/src/compiler.ts
+@@ -92,7 +92,7 @@ import stripJsonComments from 'strip-json-comments';
+ import { MappedModifier, ReflectionOp, TypeNumberBrand } from '@deepkit/type-spec';
+ import { Resolver } from './resolver.js';
+ import { knownLibFilesForCompilerOptions } from '@typescript/vfs';
+-import * as micromatch from 'micromatch';
++import as micromatch from 'micromatch';
+ 
+ // don't use from @deepkit/core since we don't want to have a dependency to @deepkit/core
+ export function isObject(obj: any): obj is { [key: string]: any } {

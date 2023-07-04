@@ -4,3 +4,4 @@
 /dist/tsc/esm/index.js.map
 /dist/tsc/tsconfig.esm.tsbuildinfo
 /dist/index.js
+/dist/esbuild/index.js
