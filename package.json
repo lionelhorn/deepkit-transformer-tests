@@ -19,7 +19,7 @@
     "typescript": "^5.1.6"
   },
   "stackblitz": {
-    "startCommand": "npm run test:ui"
+    "startCommand": "pnpm run test:esbuild"
   },
   "engines": {
     "node": "18.15.0"
