@@ -10,4 +10,7 @@ build({
     platform: "node",
     external: ['@deepkit/type'],
     plugins: [deepkitPlugin()],
+    banner: {
+        js: "import { createRequire } from 'module'; const require = createRequire(import.meta.url);",
+    },
 });
