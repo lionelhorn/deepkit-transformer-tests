@@ -5,7 +5,7 @@ build({
     entryPoints: ['src/index.ts'],
     bundle: true,
     minify: true,
-    outfile: 'dist/index.js',
+    outfile: 'dist/esbuild/index.js',
     format: 'esm',
     platform: "node",
     external: ['@deepkit/type'],
